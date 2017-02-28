@@ -1,0 +1,31 @@
+%
+%	Generic Configuration for memoir-based documents
+%
+
+\usepackage{layouts}[2001/04/29]
+
+
+% In case we need a glossary, or index
+\usepackage{glossaries}
+\glstoctrue
+\makeglossaries
+\makeindex
+
+
+% Basic page layout configuration
+\def\mychapterstyle{default}
+\def\mypagestyle{headings}
+
+
+% Use A4 layout
+\usepackage{a4}
+\usepackage{url}
+
+% Use default packages for memoir setup
+\input{mmd-memoir-packages}
+
+
+% Configure default metadata to avoid errors
+\input{mmd-default-metadata}
+
+
